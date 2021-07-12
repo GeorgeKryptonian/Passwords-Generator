@@ -1,0 +1,245 @@
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #252526;
+  border: 50px solid #333333;
+  max-width: 3840px;
+  width: 100%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.wrapper .wrapper__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-bottom: 50px;
+}
+
+.wrapper .wrapper__top .password-output {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1E1E1E;
+  color: #a1d6e2;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 10px 26px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.wrapper .wrapper__top .password-output img {
+  margin-left: 10px;
+}
+
+.wrapper .wrapper__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+}
+
+.wrapper .wrapper__bottom button {
+  color: #1995ad;
+  border: 1px solid #1995ad;
+  border-radius: 5px;
+  background: 0;
+  padding: 10px;
+  margin: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+.wrapper .wrapper__bottom button:active {
+  border: 1px solid #bcbabe;
+  color: #bcbabe;
+}
+
+.wrapper .wrapper__bottom .generate-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 54px;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.wrapper .wrapper__bottom .generate-button:active {
+  border: 1px solid #bcbabe;
+}
+
+.wrapper .wrapper__bottom .buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.wrapper .wrapper__bottom .buttons-container .bottom-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.wrapper .wrapper__bottom .buttons-container .bottom-buttons .settings-button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 54px;
+  background-color: #252526;
+  z-index: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wrapper .wrapper__bottom .buttons-container .bottom-buttons .settings-button .img-settings {
+  display: block;
+}
+
+.wrapper .wrapper__bottom .buttons-container .bottom-buttons .settings-button .gray-img-settings {
+  display: none;
+}
+
+.wrapper .wrapper__bottom .buttons-container .bottom-buttons .settings-button:active {
+  color: #1995ad;
+  border: 1px solid #1995ad;
+}
+
+.wrapper .wrapper__bottom .buttons-container .bottom-buttons .special-characters-button {
+  display: none;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 54px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wrapper .wrapper__bottom .buttons-container .bottom-buttons .special-characters-button .img-special-characters {
+  display: block;
+}
+
+.wrapper .wrapper__bottom .buttons-container .bottom-buttons .special-characters-button .gray-img-special-characters {
+  display: none;
+}
+
+.wrapper .wrapper__bottom .buttons-container .bottom-buttons .special-characters-button:active {
+  color: #1995ad;
+  border: 1px solid #1995ad;
+}
+
+.wrapper .wrapper__bottom .buttons-container .bottom-buttons .d-block {
+  display: block;
+}
+
+.wrapper .wrapper__bottom .buttons-container .top-buttons {
+  display: none;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.wrapper .wrapper__bottom .buttons-container .top-buttons .plus-button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 54px;
+}
+
+.wrapper .wrapper__bottom .buttons-container .top-buttons .plus-button img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wrapper .wrapper__bottom .buttons-container .top-buttons .plus-button .gray-img-plus {
+  display: none;
+}
+
+.wrapper .wrapper__bottom .buttons-container .top-buttons .plus-button:active .img-plus {
+  display: none;
+}
+
+.wrapper .wrapper__bottom .buttons-container .top-buttons .plus-button:active .gray-img-plus {
+  display: block;
+}
+
+.wrapper .wrapper__bottom .buttons-container .top-buttons .minus-button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 54px;
+}
+
+.wrapper .wrapper__bottom .buttons-container .top-buttons .minus-button img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wrapper .wrapper__bottom .buttons-container .top-buttons .minus-button .gray-img-minus {
+  display: none;
+}
+
+.wrapper .wrapper__bottom .buttons-container .top-buttons .minus-button:active .img-minus {
+  display: none;
+}
+
+.wrapper .wrapper__bottom .buttons-container .top-buttons .minus-button:active .gray-img-minus {
+  display: block;
+}
+
+.wrapper .wrapper__bottom .buttons-container .d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    border: 25px solid #333333;
+  }
+}

@@ -1,0 +1,158 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;  
+    background-color: #252526;
+    border: 50px solid #333333;
+    max-width: 3840px;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    .wrapper__top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: max-content;
+        margin-bottom: 50px;
+        .password-output {
+            display: flex;
+            align-items: center;
+            background-color: #1E1E1E;
+            color: #a1d6e2;
+            width: max-content;
+            height: max-content;
+            padding: 10px 26px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: color 0.3s;
+            img {
+                margin-left: 10px;
+            }
+        }
+    }
+    .wrapper__bottom {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        button {
+            color: #1995ad;
+            border: 1px solid #1995ad;
+            border-radius: 5px;
+            background: 0;
+            padding: 10px;
+            margin: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 600;
+            font-size: 17px;
+            letter-spacing: 1px;
+            width: 100%;
+            &:active {
+                border: 1px solid #bcbabe;
+                color: #bcbabe;
+            }
+        }
+        .generate-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 54px;
+            transition: none;
+            &:active {
+                border: 1px solid #bcbabe;
+            }
+        }
+        .buttons-container {
+            display: flex;
+            flex-direction: column-reverse;
+            width: max-content;
+            .bottom-buttons {
+                display: flex;
+                width: max-content;
+                .settings-button {
+                    width: max-content;
+                    height: 54px;
+                    background-color: #252526;
+                    z-index: 1;
+                    transition: 0.3s;
+                    .img-settings {
+                        display: block;
+                    }
+                    .gray-img-settings {
+                        display: none;
+                    }
+                    &:active {
+                        color: #1995ad;
+                        border: 1px solid #1995ad;
+                    }
+                }
+                .special-characters-button {
+                    display: none;
+                    width: max-content;
+                    height: 54px;
+                    transition: 0.3s;
+                    .img-special-characters {
+                        display: block;
+                    }
+                    .gray-img-special-characters {
+                        display: none;
+                    }
+                    &:active {
+                        color: #1995ad;
+                        border: 1px solid #1995ad;
+                    }
+                }
+                .d-block {
+                    display: block;
+                }
+            }
+            .top-buttons {
+                display: none;
+                width: max-content;
+                .plus-button {
+                    width: max-content;
+                    height: 54px;
+                    img {
+                        transition: 0.3s;
+                    }
+                    .gray-img-plus {
+                        display: none;
+                    }
+                    &:active {
+                        .img-plus {
+                            display: none;
+                        }
+                        .gray-img-plus {
+                            display: block;
+                        }
+                    }
+                }
+                .minus-button {
+                    width: max-content;
+                    height: 54px;
+                    img {
+                        transition: 0.3s;
+                    }
+                    .gray-img-minus {
+                        display: none;
+                    }
+                    &:active {
+                        .img-minus {
+                            display: none;
+                        }
+                        .gray-img-minus {
+                            display: block;
+                        }
+                    }
+                }
+            }            
+            .d-flex {
+                display: flex;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        border: 25px solid #333333;
+    }
+}   
