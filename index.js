@@ -33,22 +33,37 @@ function generatePassword() {
 btnGeneratePassword.onclick = function clickGeneratePasswordBtn() {
     passwordOutput.forEach(element => {
         element.style.color = '#a1d6e2';
+        element.style.padding = '10px 26px';
+
         let elemInner = element.innerText = generatePassword();
-        element.onmouseover = () => {
-            element.innerHTML = elemInner + '<img class="copy-img" src="img/copy_icon.svg" alt="copy icon" width="16px">';
-            element.style.padding = '10px 13px';
-        };
-        element.onmouseout = () => {
-            element.innerHTML = elemInner;
-            element.style.padding = '10px 26px';
-        };  
-        element.onclick = () => {
-            navigator.clipboard.writeText(element.textContent); 
-            element.style.color = '#1995ad';
-            element.innerHTML = 'Copied <img src="img/tick_icon.svg" alt="✓" width="16px">';   
-            element.onclick = null;     
-            element.onmouseover = null;
-            element.onmouseout = null;
+        if (window.innerWidth > 1024) {
+            element.onmouseover = () => {
+                element.innerHTML = elemInner + '<img class="copy-img" src="img/copy_icon.svg" alt="copy icon" width="16px">';
+                element.style.padding = '10px 13px';
+            };
+            element.onmouseout = () => {
+                element.innerHTML = elemInner;
+                element.style.padding = '10px 26px';
+            };  
+            element.onclick = () => {
+                navigator.clipboard.writeText(element.textContent); 
+                element.style.color = '#1995ad';
+                element.innerHTML = 'Copied <img src="img/tick_icon.svg" alt="✓" width="16px">';
+                element.style.padding = '10px 22.6px';
+                element.onclick = null;     
+                element.onmouseover = null;
+                element.onmouseout = null;
+            };
+        } else {
+            element.onclick = () => {
+                navigator.clipboard.writeText(element.textContent); 
+                element.style.color = '#1995ad';
+                element.innerHTML = 'Copied <img src="img/tick_icon.svg" alt="✓" width="16px">';
+                element.style.padding = '10px 22.6px';
+                element.onclick = null;     
+                element.onmouseover = null;
+                element.onmouseout = null;
+            };
         };
     });
 };
