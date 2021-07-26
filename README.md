@@ -1,1 +1,1 @@
-*Ссылка на проект - https://georgekryptonian.github.io/Passwords-Generator/*
+*Link to the project - https://georgekryptonian.github.io/Passwords-Generator/*
